@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="../StaticFiles/Images/favicon.ico" />
 	<link rel="icon" type="image/png" href="../StaticFiles/Images/favicon.png" />
 	<!-- #TemplateBeginEditable name="doctitle" -->
-	<title>AccelerationEven 加速度事件</title>
+	<title>CustomEditor 自定义编辑器</title>
 	<!-- #TemplateEndEditable -->
     <link rel="stylesheet" href="../StaticFiles/CSS/code.css" type="text/css">
     <link rel="stylesheet" href="../StaticFiles/CSS/unity.css" type="text/css">
@@ -33,7 +33,7 @@
 		document.getElementById("langMenu").selectedIndex = langgory;
 		setLanguage(langgory);
 		
-		if(!category){category = 0;}
+		if(!category){category = 5;}
 		document.getElementById("catMenu").selectedIndex = category;
 		setCategory(category);
 	});
@@ -764,7 +764,7 @@
           <li class="attrEditor" style="display: none;"><a href="PreferenceItem.html">PreferenceItem</a></li>
         </ul>
       </div>
-<div id="mainContainer"><span class="heading">AccelerationEvent 加速度事件</span>Namespace: UnityEngine<br><div class="section">
+<div id="mainContainer"><span class="heading">CustomEditor 自定义编辑器</span>Namespace: UnityEditor<br><div class="section">
           <div class="subsection">
             <div class="sigContainer">
               <div class="sigBlockJS" style="display: none;"><span class="decText"></span></div>
@@ -774,18 +774,15 @@
           </div>
           <div class="subsection">
             <div class="script-section-softheading">Description 描述</div>
-            <p class="first">Structure describing acceleration status of the device.<br /><div class="ch">描述设备的加速度状态。</div></p>
+            <p class="first">Tells an Editor class which run-time type it's an editor for.<br /><div class="ch">描述了一个用于编辑器实时运行类型的编辑器类。</div></p>
           </div>
+          <div class="subsection">When you make a custom editor for a component, you need put this attribute on the editor class.<br />当你为一个组件制作一个自定义编辑器时，你需要在编辑器类上放置这个属性。<p class="basic"></p>See Also: <a href="Editor.html">Editor</a> class.<br />请参见: <a href="Editor.html">Editor</a> 类。</div>
         </div>
-        <div class="script-section-softheading">Variables 变量</div>
+        <div class="script-section-softheading">Constructors 构造器</div>
         <table class="class-member-list">
     <tbody><tr>
-            <th class="memberTableName"><a href="AccelerationEvent-acceleration.html">acceleration</a></th>
-            <td>Value of acceleration.<br />加速度的值。</td>
-          </tr>
-    <tr>
-            <th class="memberTableName"><a href="AccelerationEvent-deltaTime.html">deltaTime</a></th>
-            <td>Amount of time passed since last accelerometer measurement.<br />经过一段时间至最后的加速度测量。</td>
+            <th class="memberTableName"><a href="CustomEditor-ctor.html">CustomEditor </a></th>
+            <td>Defines which object type the custom editor class can edit.<br />定义可以编辑自定义编辑器类的对象类型。</td>
           </tr>
   </tbody></table>
       </div>

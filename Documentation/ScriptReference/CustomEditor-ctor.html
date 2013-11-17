@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="../StaticFiles/Images/favicon.ico" />
 	<link rel="icon" type="image/png" href="../StaticFiles/Images/favicon.png" />
 	<!-- #TemplateBeginEditable name="doctitle" -->
-	<title>AccelerationEven 加速度事件</title>
+	<title>CustomEditor.CustomEditor 构造自定义编辑器</title>
 	<!-- #TemplateEndEditable -->
     <link rel="stylesheet" href="../StaticFiles/CSS/code.css" type="text/css">
     <link rel="stylesheet" href="../StaticFiles/CSS/unity.css" type="text/css">
@@ -33,7 +33,7 @@
 		document.getElementById("langMenu").selectedIndex = langgory;
 		setLanguage(langgory);
 		
-		if(!category){category = 0;}
+		if(!category){category = 5;}
 		document.getElementById("catMenu").selectedIndex = category;
 		setCategory(category);
 	});
@@ -764,30 +764,45 @@
           <li class="attrEditor" style="display: none;"><a href="PreferenceItem.html">PreferenceItem</a></li>
         </ul>
       </div>
-<div id="mainContainer"><span class="heading">AccelerationEvent 加速度事件</span>Namespace: UnityEngine<br><div class="section">
+<div id="mainContainer"><span class="heading"><a href="CustomEditor.html">CustomEditor</a>.CustomEditor 构造自定义编辑器</span><br><div class="section">
           <div class="subsection">
             <div class="sigContainer">
-              <div class="sigBlockJS" style="display: none;"><span class="decText"></span></div>
-              <div class="sigBlockCS" style="display: block;"><span class="decText"></span></div>
-              <div class="sigBlockBoo" style="display: none;"><span class="decText"></span></div>
+              <div class="sigBlockJS" style="display: none;"><span class="decText"><span class="sigKW">CustomEditor</span>(<span class="sigKW">inspectedType</span>:
+Type)</span></div>
+              <div class="sigBlockCS" style="display: block;"><span class="decText"><span class="sigKW">CustomEditor</span>(Type <span class="sigKW">inspectedType</span>);</span></div>
+              <div class="sigBlockBoo" style="display: none;"><span class="decText">
+def
+<span class="sigKW">CustomEditor</span>(<span class="sigKW">inspectedType</span> as Type)</span></div>
+              <div class="sigBlockJS" style="display: none;"><span class="decText"><span class="sigKW">CustomEditor</span>(<span class="sigKW">inspectedType</span>:
+Type,
+<span class="sigKW">editorForChildClasses</span>: 
+bool)</span></div>
+              <div class="sigBlockCS" style="display: block;"><span class="decText"><span class="sigKW">CustomEditor</span>(Type <span class="sigKW">inspectedType</span>,
+bool <span class="sigKW">editorForChildClasses</span>);</span></div>
+              <div class="sigBlockBoo" style="display: none;"><span class="decText">
+def
+<span class="sigKW">CustomEditor</span>(<span class="sigKW">inspectedType</span> as Type,
+ <span class="sigKW">editorForChildClasses</span> as bool)</span></div>
             </div>
           </div>
           <div class="subsection">
-            <div class="script-section-softheading">Description 描述</div>
-            <p class="first">Structure describing acceleration status of the device.<br /><div class="ch">描述设备的加速度状态。</div></p>
+            <div class="script-section-softheading">Parameters 参数</div><br><table class="parameters">
+              <tbody><tr>
+                <td class="param-name">inspectedType</td>
+                <td>Type that this editor can edit.<br />这个编辑器可以编辑的类型。</td>
+              </tr>
+              <tr>
+                <td class="param-name">editorForChildClasses</td>
+                <td>If true, child classes of inspectedType will also show this editor. Defaults to false.<br />如果为true，inspectedType的子类也会显示这个编辑器。默认为false。</td>
+              </tr>
+            </tbody></table>
           </div>
+          <div class="subsection">
+            <div class="script-section-softheading">Description 描述</div>
+            <p class="first">Defines which object type the custom editor class can edit.<br /><div class="ch">定义可以编辑自定义编辑器类的对象类型。</div></p>
+          </div>
+          <div class="subsection">See Also: <a href="Editor.html">Editor</a> class.<br />请参见: <a href="Editor.html">Editor</a> 类。</div>
         </div>
-        <div class="script-section-softheading">Variables 变量</div>
-        <table class="class-member-list">
-    <tbody><tr>
-            <th class="memberTableName"><a href="AccelerationEvent-acceleration.html">acceleration</a></th>
-            <td>Value of acceleration.<br />加速度的值。</td>
-          </tr>
-    <tr>
-            <th class="memberTableName"><a href="AccelerationEvent-deltaTime.html">deltaTime</a></th>
-            <td>Amount of time passed since last accelerometer measurement.<br />经过一段时间至最后的加速度测量。</td>
-          </tr>
-  </tbody></table>
       </div>
     </div>
   </body>

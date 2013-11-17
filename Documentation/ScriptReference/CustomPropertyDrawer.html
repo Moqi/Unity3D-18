@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="../StaticFiles/Images/favicon.ico" />
 	<link rel="icon" type="image/png" href="../StaticFiles/Images/favicon.png" />
 	<!-- #TemplateBeginEditable name="doctitle" -->
-	<title>AccelerationEven 加速度事件</title>
+	<title>CustomPropertyDrawer 自定义属性抽屉</title>
 	<!-- #TemplateEndEditable -->
     <link rel="stylesheet" href="../StaticFiles/CSS/code.css" type="text/css">
     <link rel="stylesheet" href="../StaticFiles/CSS/unity.css" type="text/css">
@@ -33,7 +33,7 @@
 		document.getElementById("langMenu").selectedIndex = langgory;
 		setLanguage(langgory);
 		
-		if(!category){category = 0;}
+		if(!category){category = 5;}
 		document.getElementById("catMenu").selectedIndex = category;
 		setCategory(category);
 	});
@@ -764,7 +764,7 @@
           <li class="attrEditor" style="display: none;"><a href="PreferenceItem.html">PreferenceItem</a></li>
         </ul>
       </div>
-<div id="mainContainer"><span class="heading">AccelerationEvent 加速度事件</span>Namespace: UnityEngine<br><div class="section">
+<div id="mainContainer"><span class="heading">CustomPropertyDrawer 自定义属性抽屉</span>Namespace: UnityEditor<br><div class="section">
           <div class="subsection">
             <div class="sigContainer">
               <div class="sigBlockJS" style="display: none;"><span class="decText"></span></div>
@@ -774,18 +774,19 @@
           </div>
           <div class="subsection">
             <div class="script-section-softheading">Description 描述</div>
-            <p class="first">Structure describing acceleration status of the device.<br /><div class="ch">描述设备的加速度状态。</div></p>
+            <p class="first">Tells a custom <a href="PropertyDrawer.html">PropertyDrawer</a> which run-time <a href="Serializable.html">Serializable</a> class or <a href="PropertyAttribute.html">PropertyAttribute</a> it's a drawer for.<br /><div class="ch">描述了一个用于抽屉实时运行<a href="Serializable.html">Serializable</a>类或<a href="PropertyAttribute.html">PropertyAttribute</a>的自定义<a href="PropertyDrawer.html">PropertyDrawer</a>。</div></p>
           </div>
+          <div class="subsection">When you make a custom <a href="PropertyDrawer.html">PropertyDrawer</a>, you need put this attribute on the drawer class.
+If the drawer is for a <a href="Serializable.html">Serializable</a> class, then pass the type of the class to the CustomPropertyDrawer attribute.
+If the drawer is for a <a href="PropertyAttribute.html">PropertyAttribute</a>, then pass the type of the PropertyAttribute to the CustomPropertyDrawer attribute.<br />当你制作了一个自定义<a href="PropertyDrawer.html">PropertyDrawer</a>时，你需要在这个抽屉类上放置这个属性。如果抽屉是一个<a href="Serializable.html">Serializable</a>类，再传给类的类型的CustomPropertyDrawer属性。如果抽屉为<a href="PropertyAttribute.html">PropertyAttribute</a>，再传给PropertyAttribute类型的CustomPropertyDrawer属性。<p class="basic"></p>See Also: <a href="PropertyDrawer.html">PropertyDrawer</a> class.
+<br />请参见: <a href="PropertyDrawer.html">PropertyDrawer</a> 类。
+</div>
         </div>
-        <div class="script-section-softheading">Variables 变量</div>
+        <div class="script-section-softheading">Constructors 构造器</div>
         <table class="class-member-list">
     <tbody><tr>
-            <th class="memberTableName"><a href="AccelerationEvent-acceleration.html">acceleration</a></th>
-            <td>Value of acceleration.<br />加速度的值。</td>
-          </tr>
-    <tr>
-            <th class="memberTableName"><a href="AccelerationEvent-deltaTime.html">deltaTime</a></th>
-            <td>Amount of time passed since last accelerometer measurement.<br />经过一段时间至最后的加速度测量。</td>
+            <th class="memberTableName"><a href="CustomPropertyDrawer-ctor.html">CustomPropertyDrawer</a></th>
+            <td>Tells a PropertyDrawer class which run-time class or attribute it's a drawer for.<br />描述了一个用于抽屉实时运行类或属性的属性抽屉类。</td>
           </tr>
   </tbody></table>
       </div>

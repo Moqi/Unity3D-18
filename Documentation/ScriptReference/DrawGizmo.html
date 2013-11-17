@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="../StaticFiles/Images/favicon.ico" />
 	<link rel="icon" type="image/png" href="../StaticFiles/Images/favicon.png" />
 	<!-- #TemplateBeginEditable name="doctitle" -->
-	<title>AccelerationEvent</title>
+	<title>DrawGizmo 绘制Gizmo</title>
 	<!-- #TemplateEndEditable -->
     <link rel="stylesheet" href="../StaticFiles/CSS/code.css" type="text/css">
     <link rel="stylesheet" href="../StaticFiles/CSS/unity.css" type="text/css">
@@ -33,7 +33,7 @@
 		document.getElementById("langMenu").selectedIndex = langgory;
 		setLanguage(langgory);
 		
-		if(!category){category = 0;}
+		if(!category){category = 5;}
 		document.getElementById("catMenu").selectedIndex = category;
 		setCategory(category);
 	});
@@ -59,9 +59,9 @@
       <div class="g12">
         <ul>
           <li class="Scripting"><a href="../../Documentation.html" class="scripting-anchor tation">文档首页</a></li>
-          <li class="Scripting"><a href="../Manual/index.html" title="Go to Unity manual" class="scripting-anchor manual">用户手册</a></li>
-          <li class="Scripting"><a href="../Components/index.html" title="Go to Reference" class="scripting-anchor reference">组件手册</a></li>
-          <li class="Scripting"><a href="index.html" title="Go to Scripting Reference" class="scripting-anchor script">脚本手册</a></li>
+          <li class="Scripting"><a href="../Manual/index.html" class="scripting-anchor manual">用户手册</a></li>
+          <li class="Scripting"><a href="../Components/index.html" class="scripting-anchor reference">组件手册</a></li>
+          <li class="Scripting"><a href="index.html" class="scripting-anchor script">脚本手册</a></li>
         </ul>
       </div>
     </div>
@@ -764,28 +764,29 @@
           <li class="attrEditor" style="display: none;"><a href="PreferenceItem.html">PreferenceItem</a></li>
         </ul>
       </div>
-<div id="mainContainer"><span class="heading">AccelerationEvent 加速度事件</span><div class="section">
+<div id="mainContainer"><span class="heading">DrawGizmo 绘制Gizmo</span>Namespace: UnityEditor<br><div class="section">
           <div class="subsection">
             <div class="sigContainer">
-              <div class="sigBlockJS" style="display: block;"><span class="decText"></span></div>
-              <div class="sigBlockCS" style="display: none;"><span class="decText"></span></div>
+              <div class="sigBlockJS" style="display: none;"><span class="decText"></span></div>
+              <div class="sigBlockCS" style="display: block;"><span class="decText"></span></div>
               <div class="sigBlockBoo" style="display: none;"><span class="decText"></span></div>
             </div>
           </div>
           <div class="subsection">
             <div class="script-section-softheading">Description 描述</div>
-            <p class="first">Structure describing acceleration status of the device.<br /><div class="ch">描述设备的加速度状态。</div></p>
+            <p class="first">The DrawGizmo attribute allows you to supply a gizmo renderer for any <a href="Component.html">Component</a>.
+			<br /><div class="ch">DrawGizmo属性允许你提供一个gizmo渲染器，用于任意<a href="Component.html">Component</a>。
+
+</p>
           </div>
+          <div class="subsection">At the moment you can only supply gizmo drawers for engine-components.
+All gizmo drawing methods need to be static.<br />目前只能提供engine-components的gizmo绘制。所有gizmo绘制方法必须是静态的。</div>
         </div>
-        <div class="script-section-softheading">Variables 变量</div>
+        <div class="script-section-softheading">Constructors 构造器</div>
         <table class="class-member-list">
     <tbody><tr>
-            <th class="memberTableName"><a onclick="loadPage('AccelerationEvent-acceleration'); return false;" href="">acceleration</a></th>
-            <td>Value of acceleration.<br />加速度的值。</td>
-          </tr>
-    <tr>
-            <th class="memberTableName"><a onclick="loadPage('AccelerationEvent-deltaTime'); return false;" href="">deltaTime</a></th>
-            <td>Amount of time passed since last accelerometer measurement.<br />经过一段时间至最后的加速度测量。</td>
+            <th class="memberTableName"><a href="DrawGizmo-ctor.html">DrawGizmo</a></th>
+            <td>Defines when the gizmo should be invoked for drawing.<br />定义当绘制gizmo时应该被调用。</td>
           </tr>
   </tbody></table>
       </div>
